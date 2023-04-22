@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сожги жир!</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Введите свои параметры</h1>
+    <form action="">
+        <p>Вес</p>
+        <input type="number" class="weight" placeholder="Вес в кг">
+        <p>Рост</p>
+        <input type="number" class="height">
+        <p>Возраст</p>
+        <input type="number" class="age">
+        <div class="radio-wrapper">
+            <input type="radio" id="contactChoice1"
+             name="kef" value="1.2">
+            <label for="contactChoice1">Минимальный</label>
+        
+            <input type="radio" id="contactChoice2"
+             name="kef" value="1.375">
+            <label for="contactChoice2">Низкий</label>
+        
+            <input type="radio" id="contactChoice3"
+             name="kef" value="1.55">
+            <label for="contactChoice3">Умеренный</label>
+
+            <input type="radio" id="contactChoice4"
+             name="kef" value="1.7">
+            <label for="contactChoice3">Высокий</label>
+
+            <input type="radio" id="contactChoice5"
+             name="kef" value="1.9">
+            <label for="contactChoice3">Экстремальный</label>
+          </div>
+        <button type="submit" class="button">Рассчитать</button>
+        <button type="reset">Очистить</button>
+    </form>
+    <p>Вам нужно потреблять <span class="result"></span> ккал в день</p>
+    <script src="./script.js"></script>
+</body>
+
+</html>
